@@ -1,0 +1,37 @@
+<div  class="article">
+
+<table class="table" *ngFor="let item of products">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">KOD</th>
+      <th scope="col">Nazwa</th>
+      <th scope="col">Cena</th>
+      <th scope="col">Opis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.cod}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.description}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<hr>
+<div class="Container">
+    <label>KOD</label><br>
+    <input type="text"><br>
+    <label>Nazwa</label><br>
+    <input type="text"><br>
+    <label>Cena</label><br>
+    <input type="text"><br>
+    <label>Opis</label><br>
+    <input type="text"><br>
+    <hr>
+    <button (click)="addProduct()">Dodaj nowy artykuł</button>
+</div>
